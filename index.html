@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+    </style>
+    <title>Level UP</title>
+  </head>
+  <body>
+    <div class="wrapper">
+     
+<header class="header">
+    <video autoplay   muted class="header__video_bg" >
+        <source src="img\Doctor_02.mp4" type="video/mp4"></source>
+       </video>
+    <h1 class="header__h1">Level Up</h1>
+    <div><img src="img\prod (1).png" class="header__prod"/>
+      <ul class="header__ul">
+        <li>Лучшие таблетки для повышения потенции</li>
+        <li>Нет аналогов на рынке</li>
+        <li>100% Натуральный состав</li>
+        <button id="button-one" class="ingredient__btn">Заказать</button>
+      </ul></div>
+</header>
+<section class="ingridients">
+  <div class="ingredients__one">
+    <div class="ingredient">
+      <img src="img\Ginseng.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Женьшень </span>
+      <button class="ingredient__btn " id="button-two">Заказать</button>
+    </div>
+    <div class="ingredient">
+      <img src="img\pumpkin.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Тыква </span>
+      <button class="ingredient__btn" id="button-theree">Заказать</button>
+    </div>
+    <div class="ingredient">
+      <img src="img\amarant.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Семена амаранта </span>
+      <button class="ingredient__btn" id="button-four">Заказать</button>
+    </div>
+  </div>
+  <div class="product__one"><img src="img\prod (1).png" /></div>
+  <div class="ingredients__two">
+    <div class="ingredient">
+      <img src="img\Pant.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Панты  марана </span>
+      <button class="ingredient__btn" id="button-five">Заказать</button>
+    </div>
+    <div class="ingredient">
+      <img src="img\moss.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Ирландский мох </span>
+      <button class="ingredient__btn" id="button-six">Заказать</button>
+    </div>
+    <div class="ingredient">
+      <img src="img\Kolendula.jpg" class="ingredient__phto" />
+      <span class="ingredient__name">Колендула</span>
+      <button class="ingredient__btn" id="button-seven">Заказать</button>
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <div class="reviews__feedback">
+    <img src="img\user1.svg" class="user" /><span class="reviews__feedback_text"
+      >Отлично</span
+    >
+  </div>
+  <div class="reviews__feedback">
+    <img src="img\user2.svg" class="user" /><span class="reviews__feedback_text"
+      >Замечатльно
+    </span>
+  </div>
+  <div class="reviews__feedback">
+    <img src="img\user3.svg" class="user" /><span class="reviews__feedback_text"
+      >Жена рада</span
+    >
+  </div>
+   <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+  <a class="next" onclick="plusSlides(1)">&#10095</a> 
+</section>
+<section class="product-description">
+<div class="product-description_one">
+  <img class="product-description__photo" src="img\prod1.png" alt="product"/>
+  <span class="product-description__txt">Твёрдая дозированная лекарственная форма, получаемая прессованием порошков и гранул, содержащих одно или более лекарственных веществ с добавлением или без вспомогательных веществ или получаемая формованием специальных масс.</span>
+</div>
+<ul class="product-description__ul_inline">
+  <li>Лучшие таблетки для повышения потенции</li>
+  <li style="position:relative;left:-35px;">Нет аналогов на рынке</li>
+  <li>100% Натуральный состав</li>
+  <button class="product-description__ul_btn ingredient__btn " style="left:25px; top:0px" id="button-eight">Заказать</button>
+</ul>
+</section>
+<section class="order" id="form">
+  <h2 class="order__h2">Level Up</h2>
+  <div id="order__time"></div>
+  <div class="order__prod-price">
+    <img class="prod_photo" src="img\prod (1).png"/>
+    <div class="order__price">
+      <s class="old-price">5000</s>
+  <span class="new-price">5200</span>
+    </div>
+  </div>
+ 
+    <form>
+      <input type="text" id="name" placeholder="Имя" title="Например:Вася Пупкин" required >
+    <input id="license-plate" class="license-plate " type="tel"  placeholder="Номер телефона"
+   required title="Например:8 993 567 43 44" >
+   
+  <input type="button" value="Заказать" class="ingredient__btn">
+    </form>
+    
+ 
+</div>
+</section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
